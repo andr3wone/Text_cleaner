@@ -4,7 +4,7 @@ import re
 from walkoff_app_sdk.app_base import AppBase
 
 class Cleaner(AppBase):
-    __version__ = "0.0.1"
+    __version__ = "0.0.2"
     app_name = "Text_Clean"  
 
     def __init__(self, redis, logger, console_logger=None):
@@ -21,7 +21,7 @@ class Cleaner(AppBase):
     # Do we care about arbitrary code execution here?
     # Probably not huh
 
-    def clean_html(self, data):
+    def Clean(self, data):
         soup = BeautifulSoup(data, 'html.parser')
         
         for script in soup(["script", "style"]):
