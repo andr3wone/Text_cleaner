@@ -13,7 +13,7 @@ contact_info:
   email: ""
 actions:
   - name: Clean
-    description: Runs a GET request towards the specified endpoint
+    description: Cleaning HTML code for pure text
     parameters:
       - name: data 
         description: HTML code to clean
